@@ -4,7 +4,7 @@ This project illustrates how one would go about implementing a GraphQL Web API i
 
 This project was created by copying the [swift-api-rest](https://github.com/vkantchev/swift-api-rest) project and refactoring from REST to GraphQL. 
 
-Currently for simplicity the database is just one table. However in a real world application there should probably be a separate table for Author and a BookAuthor table that links Books and Authors. See [Additional Considerations](https://github.com/vkantchev/swift-api-rest?tab=readme-ov-file#additional-considerations) in `swift-api-rest`.
+Currently for simplicity the database is just one table. However in a real world application there should probably be a separate table for Author and a BookAuthor table that links Books and Authors. See [Additional Considerations](https://github.com/vkantchev/swift-api-rest?tab=readme-ov-file#additional-considerations) in `swift-api-rest` for details.
 
 ## Run
 
