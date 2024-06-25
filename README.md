@@ -114,13 +114,57 @@ Run tests in multiple python environments (will run for 3.12, 3.11, 3.10):
 hatch run test
 ```
 
-## Tasks
+## Deploy to AWS
 
-List tasks:
+### AWS Amplify CLI
+
+Follow [Set up Amplify CLI](https://docs.amplify.aws/gen1/javascript/tools/cli/start/set-up-cli) to install the AWS Amplify CLI.
+
+### Deploy
+
+Initialize the Amplify project:
 
 ```bash
-inv --list
+amplify init
 ```
+
+Enable container-based deployments (advanced option):
+
+```bash
+amplify configure project
+```
+
+Add API backend:
+
+```bash
+amplify add api
+```
+
+Copy app code (replace `swiftapigraphql` with the resource name that Amplify generates for you):
+
+```bash
+amplify_dir=./amplify/backend/api/swiftapigraphql/src
+
+# App 
+cp -pr src $amplify_dir/
+cp -p requirements.txt $amplify_dir/
+
+# Docker
+cp -p docker/Dockerfile $amplify_dir/
+cp -p docker/docker-compose.yml $amplify_dir/
+```
+
+Deploy service:
+
+```bash
+amplify push
+```
+
+NOTE:
+
+* `amplify push`  will build all your local backend resources and provision it in the cloud.
+
+* `amplify publish` will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud.
 
 ## Run in Podman / Docker 
 
@@ -136,6 +180,14 @@ Delete container and image:
 
 ```bash
 inv podman-delete
+```
+
+## Invoke Tasks
+
+List tasks:
+
+```bash
+inv --list
 ```
 
 ## License
