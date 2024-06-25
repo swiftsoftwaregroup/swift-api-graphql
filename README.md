@@ -119,8 +119,6 @@ inv --list
 
 ## Run in Podman / Docker 
 
-## Run in Podman / Docker 
-
 > In order to do this you will need Podman. See [Setup Podman on macOS](./docs/setup-podman-macos.md) for details.
 
 Rebuild container image and start container:
