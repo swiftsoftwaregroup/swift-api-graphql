@@ -6,6 +6,11 @@ This project was created by copying the [swift-api-rest](https://github.com/vkan
 
 Currently for simplicity the database is just one table. However in a real world application there should probably be a separate table for Author and a BookAuthor table that links Books and Authors. See [Additional Considerations](https://github.com/vkantchev/swift-api-rest?tab=readme-ov-file#additional-considerations) in `swift-api-rest` for details.
 
+## Setup
+
+* [Setup for macOS](./docs/setup-macos.md)
+* [Setup for Ubuntu Linux](./docs/setup-linux.md)
+
 ## Run
 
 ```bash
