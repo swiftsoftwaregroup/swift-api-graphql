@@ -94,9 +94,13 @@ pytest
 Generate test coverage report:
 
 ```bash
-coverage run -m pytest
-coverage combine
-coverage report
+coverage run -m pytest && coverage combine && coverage report
+```
+
+Run tests in multiple python environments:
+
+```sh
+tox
 ```
 
 ## Tasks
