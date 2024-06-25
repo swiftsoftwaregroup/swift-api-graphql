@@ -6,8 +6,5 @@ black
 isort
 mypy
 invoke
-tox
-tox-gh-actions
-
 
 -r requirements.txt
