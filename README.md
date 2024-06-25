@@ -1,6 +1,10 @@
 # swift-api-graphql
 
-GraphQL Web API using Python, FastAPI, and Strawberry
+This project illustrates how one would go about implementing a GraphQL Web API in Python using FastAPI and Strawberry. 
+
+This project was created by copying the [swift-api-rest](https://github.com/vkantchev/swift-api-rest) project and refactoring from REST to GraphQL. 
+
+Currently for simplicity the database is just one table. However in a real world application there should probably be a separate table for Author and a BookAuthor table that links Books and Authors. See [Additional Considerations](https://github.com/vkantchev/swift-api-rest?tab=readme-ov-file#additional-considerations) in `swift-api-rest`.
 
 ## Run
 
