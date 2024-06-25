@@ -20,6 +20,8 @@ Open the Graph<i>i</i>QL Explorer UI:
 open http://127.0.0.1:8001/graphql
 ```
 
+![graphiql-ui](./docs/graphiql-ui.png)
+
 ### Add a book
 
 Paste this GraphQL code and click the `play` button:
